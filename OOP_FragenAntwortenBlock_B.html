@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block B – Klassen, Objekte, Konstruktoren</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        h1 {
+            color: #0F4391;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0F4391;
+        }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Block B – Klassen, Objekte, Konstruktoren (Fragen 4–10)</h1>
+
+    <!-- Fragen/Antworten -->
+    <h2>4. Aus welchen Bestandteilen besteht eine Klasse?</h2>
+    <pre>
+Eine Klasse besteht aus:
+- Attributen (Zustand),
+- Methoden (Verhalten) und
+- optional einem oder mehreren Konstruktoren (zur Initialisierung von Objekten).
+Diese drei Bestandteile bilden die Struktur eines Bauplans für Objekte.
+📘 Lektion: 18 – Klassenelemente | 📄 Seite: 172–174
+    </pre>
+
+    <h2>5. In welchem Zusammenhang stehen die Begriffe 'Klasse' und 'Objekt'?</h2>
+    <pre>
+Eine Klasse ist der Bauplan, ein Objekt ist die konkrete Instanz davon.
+Ein Objekt „realisiert“ die Struktur und das Verhalten, das in der Klasse definiert ist.
+📘 Lektion: 17 – Objekttypen | 📄 Seite: 158–160
+    </pre>
+
+    <h2>6. Was ist der Unterschied zwischen den Begriffen 'effizient' und 'effektiv'?</h2>
+    <pre>
+- Effektiv: Ein Verfahren funktioniert grundsätzlich und führt zum Ziel.
+- Effizient: Es funktioniert ressourcenschonend (z. B. schnell oder speicherarm).
+📘 Lektion: 1 – Einleitung & Softwareentwicklung | 📄 Seite: 3
+    </pre>
+
+    <h2>7. Was ist der Unterschied zwischen Wert- und Verweisvariablen?</h2>
+    <pre>
+- Wertvariable speichert einen konkreten Wert (z. B. int x = 5;)
+- Verweisvariable enthält eine Adresse zu einem Objekt im Speicher (z. B. Kunde k = new Kunde();)
+📘 Lektion: 17.3 – Wert- und Verweisvariablen | 📄 Seite: 163–164
+    </pre>
+
+    <h2>8. Wie funktioniert ein Konstruktor?</h2>
+    <pre>
+Ein Konstruktor ist eine spezielle Methode zur Initialisierung eines Objekts.
+Er hat denselben Namen wie die Klasse und keinen Rückgabewert.
+Objekte werden mit dem Schlüsselwort 'new' erzeugt, z. B.:
+Rechnung r = new Rechnung();
+📘 Lektion: 17.2 – Konstruktoren | 📄 Seite: 161–162
+    </pre>
+
+    <h2>9. In welchem Zusammenhang stehen Klassenhierarchie und Objekttyp?</h2>
+    <pre>
+Eine Klassenhierarchie beschreibt Vererbungsbeziehungen.
+Ein Objekt kann Typ seiner eigenen Klasse und jeder Oberklasse sein (z. B. Polymorphismus).
+📘 Lektion: 22 – Vererbung | 📄 Seite: 236–237
+    </pre>
+
+    <h2>10. Was bedeutet es, wenn ein Attribut oder eine Methode als 'static' gekennzeichnet wird?</h2>
+    <pre>
+'static' bedeutet, dass das Element zur Klasse selbst gehört – nicht zu einem einzelnen Objekt.
+- static Attribute: gemeinsame Werte aller Instanzen
+- static Methoden: können ohne Objekt aufgerufen werden
+📘 Lektion: 18.3 – Klassenelemente / statische Elemente | 📄 Seite: 174–175
+    </pre>
+
+    <!-- Navigation -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_A.html" class="nav-button">🔙 Zu Block A</a>
+	<a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+        <a href="OOP_FragenAntwortenBlock_C.html" class="nav-button">Weiter zu Block C 🔜</a>
+    </div>
+</div>
+
+</body>
+</html>
