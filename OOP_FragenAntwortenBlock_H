@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block H – Generics, Javadoc, Sonstiges</title>
+    <style>
+        /* Grundlegende Seitenformatierung */
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Inhaltselement mit Hintergrund, Schatten, Padding */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo oben (optional) */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        /* Überschriften */
+        h1 {
+            color: #0F4391;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #0F4391;
+        }
+
+        /* Antwortformat im Pre-Style */
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Buttons für Navigation */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logo optional -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Block H – Generics, Javadoc, Sonstiges (Fragen 61–66)</h1>
+
+    <h2>61. Was sind Generics in Java und warum werden sie verwendet?</h2>
+    <pre>
+Generics erlauben Typsicherheit, Wiederverwendbarkeit und vermeiden Casts.
+Beispiel: List&lt;String&gt; namen = new ArrayList&lt;&gt;();
+📘 Lektion: 35 – Generics | 📄 Seite: 417–419
+    </pre>
+
+    <h2>62. Was bedeutet Typsicherheit bei Generics?</h2>
+    <pre>
+Der Compiler prüft zur Compile-Zeit, ob nur gültige Typen verwendet werden.
+📘 Lektion: 35.1 – Vorteile von Generics | 📄 Seite: 418
+    </pre>
+
+    <h2>63. Welche Wildcards gibt es bei Generics und wozu dienen sie?</h2>
+    <pre>
+- &lt;?&gt;: unbekannter Typ (z. B. zum Lesen)
+- &lt;? extends T&gt;: Subtyp von T (Producer)
+- &lt;? super T&gt;: Supertyp von T (Consumer)
+📘 Lektion: 35.2 – Bounded Wildcards | 📄 Seite: 420
+    </pre>
+
+    <h2>64. Wozu dient Javadoc in Java?</h2>
+    <pre>
+Zur automatischen Generierung von HTML-Dokumentation aus Quellcode-Kommentaren.
+📘 Lektion: 36 – Dokumentation und Tools | 📄 Seite: 425–427
+    </pre>
+
+    <h2>65. Was bedeutet der Begriff „Design by Contract“?</h2>
+    <pre>
+Ein Entwurfsprinzip mit Vorbedingungen, Nachbedingungen und Invarianten.
+📘 Lektion: 24.5 – Fehlervermeidung durch Verträge | 📄 Seite: 258
+    </pre>
+
+    <h2>66. Wie unterstützt OOP Wartbarkeit und Wiederverwendbarkeit von Software?</h2>
+    <pre>
+- Kapselung
+- Vererbung
+- Polymorphismus
+- Modularität
+📘 Lektion: 17–23 – OOP-Prinzipien | 📄 Seite: 158–248
+    </pre>
+
+    <!-- Navigation -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_G.html" class="nav-button">🔙 Zurück zu Block G</a>
+	      <a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+    </div>
+
+</div>
+
+</body>
+</html>
