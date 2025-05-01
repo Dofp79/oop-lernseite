@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block D – Vererbung, Polymorphismus, Interfaces</title>
+    <style>
+        /* Grundlegende Formatierung */
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hauptbereich für Inhalt */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo (optional) */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        /* Haupttitel */
+        h1 {
+            color: #0F4391;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Abschnittsüberschriften */
+        h2 {
+            color: #0F4391;
+        }
+
+        /* Antworttext im Programmierstil */
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Button-Bereich am Ende */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Optional: Logo -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Block D – Vererbung, Polymorphismus, Interfaces (Fragen 19–27)</h1>
+
+    <h2>19. Was ist der Unterschied zwischen dynamischer und statischer Bindung?</h2>
+    <pre>
+- Dynamische Bindung: Methode wird zur Laufzeit aufgerufen – bei Instanzmethoden.
+- Statische Bindung: Methode oder Attribut wird zur Compilezeit gebunden – bei static, final oder Attributzugriff.
+📘 Lektion: 21.2 – Polymorphismus | 📄 Seite: 226–228
+    </pre>
+
+    <h2>20. Wozu dient das Überschreiben von Methoden?</h2>
+    <pre>
+- Überschreiben (Overriding) erlaubt Unterklassen, eine geerbte Methode neu zu definieren.
+- Ermöglicht polymorphes Verhalten in OOP.
+📘 Lektion: 21 – Polymorphie & Vererbung | 📄 Seite: 223–226
+    </pre>
+
+    <h2>21. Wie verhindert man, dass eine Methode überschrieben wird?</h2>
+    <pre>
+- Mit dem Schlüsselwort 'final' kann eine Methode als nicht überschreibbar markiert werden.
+📘 Lektion: 21.3 – Einschränkungen beim Überschreiben | 📄 Seite: 229
+    </pre>
+
+    <h2>22. Wozu sollte man Zugriffsbeschränkungen vornehmen?</h2>
+    <pre>
+- Um Kapselung zu stärken
+- Interne Methoden zu schützen
+- Änderungen wartungsfreundlich zu gestalten
+📘 Lektion: 19.1 – Sichtbarkeiten in Klassen | 📄 Seite: 183–185
+    </pre>
+
+    <h2>23. Von welchen Klassen aus kann auf ein Element mit Standardzugriff zugegriffen werden?</h2>
+    <pre>
+- Nur von Klassen im selben Package (package-private Sichtbarkeit).
+📘 Lektion: 19.1 – Zugriffsmodifikatoren | 📄 Seite: 184
+    </pre>
+
+    <h2>24. Unterschied zwischen UML- und Java-Interpretation von 'protected'?</h2>
+    <pre>
+- Java: Zugriff durch Unterklassen auch aus anderen Paketen
+- UML: Zugriff nur durch Unterklassen, nicht durch andere Klassen im selben Paket
+📘 Lektion: 19.2 – Java vs. UML Zugriffsrechte | 📄 Seite: 185–186
+    </pre>
+
+    <h2>25. Was ist der Unterschied zwischen abstrakten Klassen und Schnittstellen?</h2>
+    <pre>
+Abstrakte Klassen vs. Interfaces:
+- Attribute erlaubt vs. keine Instanzattribute (nur static final)
+- Methoden mit Körper vs. nur default- oder static-Methoden
+- Nur einfache Vererbung vs. Mehrfachvererbung möglich
+📘 Lektion: 23.1 – Abstrakte Klassen & Interfaces | 📄 Seite: 244–246
+    </pre>
+
+    <h2>26. Wozu gibt es abstrakte Methoden?</h2>
+    <pre>
+- Damit Unterklassen gezwungen sind, bestimmte Methoden selbst zu implementieren.
+📘 Lektion: 23 – Abstrakte Klassen | 📄 Seite: 243–244
+    </pre>
+
+    <h2>27. Wie geht Java mit Methoden aus zwei Interfaces um, die beide 'default'-Implementierungen haben?</h2>
+    <pre>
+- Es entsteht ein Konflikt bei gleicher Signatur.
+- Der Entwickler muss die Methode explizit überschreiben.
+📘 Lektion: 23.3 – Konflikte bei Mehrfachvererbung von Interfaces | 📄 Seite: 247–248
+    </pre>
+
+    <!-- Navigation -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_C.html" class="nav-button">🔙 Zurück zu Block C</a>
+	<a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+        <a href="OOP_FragenAntwortenBlock_E.html" class="nav-button">Weiter zu Block E 🔜</a>
+    </div>
+</div>
+
+</body>
+</html>
