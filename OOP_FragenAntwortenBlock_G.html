@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block G – Datenstrukturen, Listen, Bäume, Graphen</title>
+    <style>
+        /* Grundstruktur */
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Inhaltscontainer */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo-Stil */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        /* Überschriften */
+        h1 {
+            color: #0F4391;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #0F4391;
+        }
+
+        /* Textformat für Antworten */
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Navigationsbereich */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Optionales Logo -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Block G – Datenstrukturen, Listen, Bäume, Graphen (Fragen 46–60)</h1>
+
+    <h2>46. Wie fügt man Elemente zu einer einfach verketteten Liste hinzu und entfernt sie?</h2>
+    <pre>
+Hinzufügen: neues Element wird am Anfang eingefügt, Kopf zeigt auf neues Element.
+Entfernen: Kopf zeigt auf das nächste Element.
+📘 Lektion: 30.1 – Lineare Listen | 📄 Seite: 354–356
+    </pre>
+
+    <h2>47. Welchen Vorteil haben verkettete Listen im Vergleich zu Arrays?</h2>
+    <pre>
+- Arrays: feste Größe
+- Listen: dynamisch erweiterbar, effizient beim Einfügen und Entfernen
+📘 Lektion: 30 – Datenstrukturen | 📄 Seite: 353–354
+    </pre>
+
+    <h2>48. Was bedeuten LIFO und FIFO?</h2>
+    <pre>
+LIFO: Last In First Out (z. B. Stack)
+FIFO: First In First Out (z. B. Queue)
+📘 Lektion: 30.2 – Stacks und Queues | 📄 Seite: 358–360
+    </pre>
+
+    <h2>49. Welche Durchlaufstrategien für Bäume gibt es?</h2>
+    <pre>
+- In-Order: Links – Wurzel – Rechts
+- Pre-Order: Wurzel – Links – Rechts
+- Post-Order: Links – Rechts – Wurzel
+- Level-Order: Ebene für Ebene
+📘 Lektion: 31 – Binäre Bäume | 📄 Seite: 368–371
+    </pre>
+
+    <h2>50. Wie fügt man einen neuen Knoten in einen AVL-Baum ein?</h2>
+    <pre>
+- Einfügen wie bei binärem Suchbaum
+- Balancieren durch Rotation
+📘 Lektion: 31.3 – AVL-Bäume | 📄 Seite: 374–376
+    </pre>
+
+    <h2>51. Wie findet man den kürzesten Weg zwischen zwei Knoten in einem Graphen?</h2>
+    <pre>
+→ Dijkstra-Algorithmus mit Prioritätswarteschlange.
+📘 Lektion: 33 – Dijkstra & Graphen | 📄 Seite: 395–398
+    </pre>
+
+    <h2>52. Was ist ein Graph in der Informatik?</h2>
+    <pre>
+Ein Graph besteht aus Knoten und Kanten.
+📘 Lektion: 32 – Einführung in Graphen | 📄 Seite: 383–385
+    </pre>
+
+    <h2>53. Was ist ein Heap?</h2>
+    <pre>
+Ein Heap ist ein vollständiger binärer Baum mit Heap-Eigenschaft.
+📘 Lektion: 31.4 – Heaps | 📄 Seite: 377–378
+    </pre>
+
+    <h2>54. Was ist ein HashSet und ein HashMap in Java?</h2>
+    <pre>
+- HashSet: speichert eindeutige Elemente
+- HashMap: speichert Key-Value-Paare
+📘 Lektion: 34 – Java Collections | 📄 Seite: 408–410
+    </pre>
+
+    <h2>55. Wie funktioniert Hashing?</h2>
+    <pre>
+Ein Hashwert wird berechnet, um den Index im Array zu bestimmen.
+📘 Lektion: 34.2 – Hashverfahren | 📄 Seite: 410–412
+    </pre>
+
+    <h2>56. Was ist ein Iterator?</h2>
+    <pre>
+Ein Objekt, das eine Datenstruktur sequenziell durchläuft.
+📘 Lektion: 34.1 – Iterierbare Sammlungen | 📄 Seite: 407
+    </pre>
+
+    <h2>57. Was ist der Unterschied zwischen Baum und Graph?</h2>
+    <pre>
+- Baum: zyklusfreier Graph
+- Graph: kann Zyklen enthalten
+📘 Lektion: 31 vs. 32 | 📄 Seite: 382
+    </pre>
+
+    <h2>58. Was ist ein Stack Overflow?</h2>
+    <pre>
+Ein Fehler durch zu viele Aufrufe im Call Stack (meist bei unendlicher Rekursion).
+📘 Lektion: 28.4 – Risiken bei Rekursion | 📄 Seite: 336
+    </pre>
+
+    <h2>59. Wie kann man Datenstrukturen vergleichen?</h2>
+    <pre>
+Nach Zugriff, Einfügezeit, Speicherbedarf etc.
+📘 Lektion: 30–34 | 📄 Seite: 354–412
+    </pre>
+
+    <h2>60. Welche Operationen unterstützen Mengen in Java?</h2>
+    <pre>
+- add(), remove(), contains()
+- addAll(), removeAll(), retainAll()
+📘 Lektion: 34 – Set API | 📄 Seite: 409–410
+    </pre>
+
+    <!-- Navigation -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_F.html" class="nav-button">🔙 Zurück zu Block E</a>
+      	<a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+        <a href="OOP_FragenAntwortenBlock_H.html" class="nav-button">Weiter zu Block F 🔜</a>
+    </div>
+
+</div>
+
+</body>
+</html>
