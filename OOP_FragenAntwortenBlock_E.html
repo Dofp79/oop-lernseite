@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block F – Algorithmen und Sortiermethoden</title>
+    <title>Block E – Fehlerbehandlung, Exceptions, Debugging</title>
     <style>
-        /* Grunddesign */
+        /* Grundstruktur der Seite */
         body {
             font-family: Calibri, sans-serif;
             margin: 40px;
@@ -14,7 +14,7 @@
             color: #333;
         }
 
-        /* Container für den Seiteninhalt */
+        /* Container für zentralen Seiteninhalt */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -24,7 +24,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Optionales Logo */
+        /* Logo-Container (optional) */
         .logo-container {
             text-align: center;
             margin-bottom: 20px;
@@ -55,7 +55,7 @@
             color: #0F4391;
         }
 
-        /* Antwortblöcke */
+        /* Antwortfelder */
         pre {
             background: #272822;
             color: #f8f8f2;
@@ -64,7 +64,7 @@
             overflow-x: auto;
         }
 
-        /* Button-Navigation */
+        /* Navigationsbuttons am Ende */
         .button-container {
             text-align: center;
             margin-top: 40px;
@@ -91,99 +91,77 @@
 
 <div class="container">
 
-    <!-- Optionales Logo -->
+    <!-- Logo (optional) -->
     <div class="logo-container">
         <img src="Bombillo.png" alt="Logo" class="logo">
     </div>
 
-    <h1>Block F – Algorithmen und Sortiermethoden (Fragen 36–45)</h1>
+    <h1>Block E – Fehlerbehandlung, Exceptions, Debugging (Fragen 28–35)</h1>
 
-    <h2>36. Wie wird die lineare Suche und die Suche nach Maximum/Minimum durch sortierte Felder beschleunigt?</h2>
+    <h2>28. Wann benötigt man einen try-Block?</h2>
     <pre>
-Minimum: erstes Element, Maximum: letztes Element.
-Lineare Suche kann vorzeitig abbrechen, wenn aktuelles Element größer als gesuchtes ist.
-📘 Lektion: 14 – Algorithmen und Effizienz | 📄 Seite: 131–133
+Ein try-Block wird verwendet, wenn Code potenziell eine Ausnahme (Exception) auslösen kann.
+Beispiel: Division durch null, Parsen ungültiger Eingaben, Zugriff auf Datei.
+📘 Lektion: 24.1 – Exceptions und try-catch | 📄 Seite: 250–252
     </pre>
 
-    <h2>37. Welche Rolle spielt die Variable 'minimum' beim Algorithmus zur Minimumsuche?</h2>
+    <h2>29. Für welche unbehandelten Exceptions benötigt man das Schlüsselwort throws?</h2>
     <pre>
-Speichert das kleinste bisher gefundene Element.
-Wird bei jedem Vergleich ggf. aktualisiert.
-📘 Lektion: 14.1 – Suchen und Vergleichen | 📄 Seite: 132
+Für geprüfte Ausnahmen (checked exceptions), z. B. IOException, SQLException.
+📘 Lektion: 24.2 – Checked vs. Unchecked Exceptions | 📄 Seite: 253–254
     </pre>
 
-    <h2>38. Wie funktioniert Bubblesort?</h2>
+    <h2>30. Wie setzt man die Fehlermeldung, die bei der Ausgabe einer Exception erscheint?</h2>
     <pre>
-1. Durchlauf von links nach rechts.
-2. Vergleich benachbarter Elemente.
-3. Tausch bei Bedarf.
-4. Wiederholen bis keine Vertauschung mehr erfolgt.
-📘 Lektion: 14.2 – Sortieralgorithmen | 📄 Seite: 134–136
+Über den Konstruktor mit super("Nachricht") in einer eigenen Exception-Klasse.
+📘 Lektion: 24.3 – Eigene Exception-Klassen | 📄 Seite: 256
     </pre>
 
-    <h2>39. Wie entwickelt sich der Kontrollfluss in einem rekursiven Algorithmus?</h2>
+    <h2>31. Welche drei Methoden gibt es, um die Fehlerfreiheit eines Programms zu gewährleisten?</h2>
     <pre>
-- Aktive Phase: Zerlegung in Teilprobleme
-- Basisfall: direkte Lösung möglich
-- Passive Phase: Teilergebnisse werden kombiniert
-📘 Lektion: 28.1 – Rekursion | 📄 Seite: 326–328
+1. Verifikation (mathematischer Nachweis)
+2. Testen (gezielte Testfälle)
+3. Fehlervermeidung (gutes Design)
+📘 Lektion: 1.2 – Qualitätssicherung | 📄 Seite: 4
     </pre>
 
-    <h2>40. Welche Vor- und Nachteile bieten rekursive Algorithmen?</h2>
+    <h2>32. Warum sind Compilezeit-Fehler besser als Laufzeitfehler?</h2>
     <pre>
-Vorteile:
-+ verständlich für baumartige Probleme
-+ gut beweisbar
-
-Nachteile:
-- höherer Speicherverbrauch
-- langsamer bei tiefer Rekursion
-📘 Lektion: 28.2 – Rekursive Verfahren | 📄 Seite: 330–331
+Compilezeit-Fehler werden vom Compiler erkannt.
+Laufzeitfehler treten erst während der Programmausführung auf und sind schwerer zu finden.
+📘 Lektion: 24 – Fehlerarten | 📄 Seite: 251
     </pre>
 
-    <h2>41. Wie funktionieren rekursive Such- und Sortieralgorithmen?</h2>
+    <h2>33. Was sind die vier Schritte zur Identifikation von Fehlern?</h2>
     <pre>
-- Binäre Suche: wiederholte Halbierung
-- Quicksort: Feld teilen und rekursiv sortieren
-- Mergesort: Felder teilen, sortieren und zusammenfügen
-📘 Lektion: 28.3 – Rekursive Sortieralgorithmen | 📄 Seite: 333–335
+1. Fehler reproduzieren
+2. Fehler lokalisieren
+3. Fehler erkennen (Soll-/Ist-Vergleich)
+4. Fehler verstehen (Ursache analysieren)
+📘 Lektion: 24.4 – Debugging-Strategien | 📄 Seite: 257
     </pre>
 
-    <h2>42. Was sind die vier Schritte zur Entwicklung eines Algorithmus mit dynamischer Programmierung?</h2>
+    <h2>34. Welche Methoden zur Fehlerbehandlung gibt es in Java?</h2>
     <pre>
-1. Struktur optimaler Lösungen erkennen
-2. Rekursive Definition
-3. Bottom-up oder Memoisation verwenden
-4. Lösung aus Zwischenergebnissen konstruieren
-📘 Lektion: 29.1 – Dynamische Programmierung | 📄 Seite: 341–344
+- try/catch-Blöcke
+- throws-Deklarationen
+- eigene Exception-Klassen
+- Logging & Assertions
+📘 Lektion: 24 – Exceptions | 📄 Seite: 250–256
     </pre>
 
-    <h2>43. Welche Eigenschaften muss ein Problem für dynamische Programmierung erfüllen?</h2>
+    <h2>35. Was ist eine RuntimeException und wann braucht man keine throws-Deklaration?</h2>
     <pre>
-- Optimale Teilstruktur
-- Überlappende Teilprobleme
-📘 Lektion: 29.1 – Eigenschaften geeigneter Probleme | 📄 Seite: 342–343
+RuntimeException ist eine unchecked Exception (z. B. NullPointerException).
+Sie muss nicht mit throws deklariert werden.
+📘 Lektion: 24.2 – Unchecked Exceptions | 📄 Seite: 254–255
     </pre>
 
-    <h2>44. Wie funktioniert der Beweis durch Cut & Replace?</h2>
-    <pre>
-Ein Widerspruchsbeweis, bei dem eine vermeintliche Optimallösung durch Teilersetzung verbessert wird.
-📘 Lektion: 29.2 – Beweistechniken | 📄 Seite: 344–345
-    </pre>
-
-    <h2>45. Wie kann man Algorithmen effizient messen und vergleichen?</h2>
-    <pre>
-- Zeitkomplexität (Big O)
-- Speicherverbrauch
-- Verhältnis Operationen zur Eingabemenge
-📘 Lektion: 14.3 – Laufzeitkomplexität | 📄 Seite: 137–139
-    </pre>
-
-    <!-- Navigations-Buttons -->
+    <!-- Navigation -->
     <div class="button-container">
-        <a href="OOP_FragenAntwortenBlock_E.html" class="nav-button">🔙 Zurück zu Block E</a>
+        <a href="OOP_FragenAntwortenBlock_D.html" class="nav-button">🔙 Zurück zu Block E</a>
 	<a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
-        <a href="OOP_FragenAntwortenBlock_G.html" class="nav-button">Weiter zu Block F 🔜</a>
+        <a href="OOP_FragenAntwortenBlock_F.html" class="nav-button">Weiter zu Block F 🔜</a>
     </div>
 
 </div>
