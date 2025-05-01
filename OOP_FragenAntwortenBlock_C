@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block C – Kontrollstrukturen und Variablen</title>
+    <style>
+        /* Seitenlayout */
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hauptcontainer für alle Inhalte */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Optionales Logo im Kopfbereich */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        /* Überschriften */
+        h1 {
+            color: #0F4391;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #0F4391;
+        }
+
+        /* Antwortblöcke im Code-Stil */
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Navigationsbereich für Buttons */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logo (optional) -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Block C – Kontrollstrukturen und Variablen (Fragen 11–18)</h1>
+
+    <h2>11. In welchem Zusammenhang stehen Blöcke und Gültigkeitsbereiche einer Variable?</h2>
+    <pre>
+Der Gültigkeitsbereich einer Variablen richtet sich nach dem Block, in dem sie deklariert wurde.
+Variablen sind nur innerhalb des Blocks sichtbar, in dem sie definiert wurden (z. B. innerhalb einer Methode oder Schleife).
+📘 Lektion: 16.1 – Sichtbarkeit und Variablen | 📄 Seite: 150–151
+    </pre>
+
+    <h2>12. Welche Schleifen gibt es in Java und wie unterscheiden sie sich?</h2>
+    <pre>
+Java kennt drei Haupt-Schleifen:
+- for → wenn Anzahl der Durchläufe bekannt ist
+- while → wenn vorher geprüft wird, ob Bedingung erfüllt ist
+- do-while → wenn Schleifendurchlauf mindestens einmal stattfinden soll
+📘 Lektion: 12.1 – Kontrollstrukturen | 📄 Seite: 115–117
+    </pre>
+
+    <h2>13. Welche Variablenrollen haben wir kennengelernt?</h2>
+    <pre>
+Typische Variablenrollen:
+- stepper: zählt Schleifendurchläufe
+- follower: verfolgt andere Werte
+- mostWanted: speichert Maximum/Minimum
+- gatherer: summiert Werte
+- temp: temporäre Speicherung
+- flag: boolescher Kontrollwert
+- final: Konstante
+📘 Lektion: 13 – Variablenrollen & Namenskonventionen | 📄 Seite: 123–125
+    </pre>
+
+    <h2>14. Was ist der Unterschied zwischen Wert- und Verweisvariablen?</h2>
+    <pre>
+- Wertvariablen: speichern direkte Werte (z. B. int x = 5;)
+- Verweisvariablen: speichern Speicheradressen auf Objekte (z. B. Person p = new Person();)
+📘 Lektion: 17.3 – Referenzen & Objektvergleiche | 📄 Seite: 163–164
+    </pre>
+
+    <h2>15. Wie funktioniert ein Konstruktor?</h2>
+    <pre>
+Ein Konstruktor ist eine spezielle Methode zur Initialisierung eines Objekts.
+Er hat denselben Namen wie die Klasse, besitzt keinen Rückgabewert und wird mit 'new' aufgerufen.
+📘 Lektion: 17.2 – Konstruktoren | 📄 Seite: 161–162
+    </pre>
+
+    <h2>16. In welchen Fällen muss eine Variable vor ihrer Verwendung initialisiert werden?</h2>
+    <pre>
+- Lokale Variablen (z. B. in Methoden) müssen zwingend initialisiert werden.
+- Felder (Attribute) in Klassen werden automatisch initialisiert.
+📘 Lektion: 16.2 – Initialisierung & Speicher | 📄 Seite: 152–153
+    </pre>
+
+    <h2>17. Was bedeutet static bei Attributen und Methoden?</h2>
+    <pre>
+- static bedeutet: gehört zur Klasse, nicht zu einem einzelnen Objekt
+- static Methoden können ohne Objekt aufgerufen werden
+- Kein Zugriff auf this innerhalb von static Methoden
+📘 Lektion: 18.3 – Klassenelemente: static | 📄 Seite: 174–175
+    </pre>
+
+    <h2>18. Was bedeutet Überladung?</h2>
+    <pre>
+- Methoden gelten als überladen, wenn sie denselben Namen, aber unterschiedliche Parameterlisten haben.
+- Dies erlaubt verschiedene Eingabemöglichkeiten (z. B. unterschiedliche Datentypen oder Parameteranzahl).
+Beispiel:
+void drucke(String s) {}
+void drucke(int i) {}
+📘 Lektion: 20.2 – Methodenüberladung | 📄 Seite: 202–203
+    </pre>
+
+    <!-- Navigation -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_B.html" class="nav-button">🔙 Zurück zu Block B</a>
+	<a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+        <a href="OOP_FragenAntwortenBlock_D.html" class="nav-button">Weiter zu Block D 🔜</a>
+    </div>
+
+</div>
+
+</body>
+</html>
