@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block A – Grundlagen der Softwareentwicklung</title>
+    <style>
+        /* Allgemeine Formatierung des Body-Bereichs */
+        body {
+            font-family: Calibri, sans-serif; /* Moderne, klare Schrift */
+            margin: 40px;                     /* Rand außen */
+            line-height: 1.6;                 /* Zeilenhöhe */
+            background-color: #f4f4f4;        /* Hellgrauer Hintergrund */
+            color: #333;                      /* Dunkelgraue Standardschriftfarbe */
+        }
+
+        /* Container für alle Inhalte, zentriert und mit Schatten */
+        .container {
+            max-width: 900px;                 /* maximale Breite für Lesbarkeit */
+            margin: 0 auto;                   /* zentriert */
+            background: #fff;                 /* weißer Hintergrund */
+            padding: 20px;                    /* Innenabstand */
+            border-radius: 8px;               /* abgerundete Ecken */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* dezente Schatten */
+        }
+
+        /* Logo-Bereich oben auf der Seite */
+        .logo-container {
+            text-align: center;               /* zentrierte Ausrichtung */
+            margin-bottom: 20px;              /* Abstand nach unten */
+        }
+
+        /* Bild (Logo) mit Stil für optisch harmonisches Erscheinungsbild */
+        .logo {
+            max-width: 140px;                 /* maximale Breite des Logos */
+            display: block;
+            margin: 0 auto;                   /* zentriert */
+            border-radius: 20px;              /* weiche Kanten */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Schattierung */
+            background-color: #f4f4f4;        /* harmonisiert mit Body */
+            transition: transform 0.3s ease;  /* sanfter Hover-Effekt */
+        }
+
+        /* Hover-Effekt: leichtes Vergrößern beim Drüberfahren */
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        /* Hauptüberschrift */
+        h1 {
+            color: #0F4391;                   /* kräftiges Blau */
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Unterüberschriften */
+        h2 {
+            color: #0F4391;
+        }
+
+        /* Stil für die textbasierten Antworten */
+        pre {
+            background: #272822;              /* dunkler Hintergrund (Code-Style) */
+            color: #f8f8f2;                   /* helle Schrift */
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;                 /* Scrollbar bei breiten Inhalten */
+        }
+
+        /* Navigationsbuttons am Ende */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;        /* Blau wie Überschrift */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;        /* dunklerer Hover-Ton */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Optionales Logo -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <!-- Haupttitel -->
+    <h1>Block A – Grundlagen der Softwareentwicklung (Fragen 1–3)</h1>
+
+    <!-- Frage 1 -->
+    <h2>1. Was sind die Phasen der Software-Entwicklung?</h2>
+    <pre>
+Die typischen Phasen im Softwareentwicklungsprozess sind:
+1. Untersuchung des Problems – Analyse der Anwendungsdomäne
+2. Anforderungsanalyse – Erstellung von Pflichten- und Lastenheften
+3. Design (Entwurf) – Struktur (Klassen, Beziehungen) und Verhalten (Interaktionen)
+4. Implementierung – Programmierung in Java
+5. Übersetzung – durch Compiler in Bytecode
+6. Verifikation / Test – statische und dynamische Testverfahren
+📘 Lektion: 1.2 – Softwareentwicklungsprozess | 📄 Seite: 2–4
+    </pre>
+
+    <!-- Frage 2 -->
+    <h2>2. Wozu dienen Anwendungsfalldiagramme?</h2>
+    <pre>
+Anwendungsfalldiagramme (Use Case Diagrams) beschreiben die Interaktion von Akteuren mit dem System.
+Sie zeigen:
+- Welche Anwendungsfälle (z. B. „Bestellung auslösen“) es gibt
+- Welche Akteure (z. B. „Kunde“, „Administrator“) diese nutzen
+📘 Lektion: 2.3 – UML & Anwendungsfälle | 📄 Seite: 10–13
+    </pre>
+
+    <!-- Frage 3 -->
+    <h2>3. Warum ist die Analyse-Phase in der Softwareentwicklung von zentraler Bedeutung?</h2>
+    <pre>
+Weil in dieser Phase die Grundlage für ein korrektes Systemverständnis geschaffen wird.
+Fehlende oder falsche Analysen führen zu Problemen im Design und in der Implementierung.
+OOP legt daher großen Wert auf:
+- Begriffsanalyse (z. B. was ist „Kunde“?)
+- Beziehungsklärung (z. B. „Kunde hat Bestellung“)
+- Modellierung der Realität
+📘 Lektion: 2.1 – Analyse & Fallstudien | 📄 Seite: 8–10
+    </pre>
+
+    <!-- Navigationsbereich -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_B.html" class="nav-button">Weiter zu Block B 🔜</a>
+	<a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+    </div>
+</div>
+
+</body>
+</html>
