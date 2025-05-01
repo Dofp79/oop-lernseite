@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block F – Algorithmen und Sortiermethoden</title>
+    <style>
+        /* Grunddesign */
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Container für den Seiteninhalt */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Optionales Logo */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 140px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.03);
+        }
+
+        /* Überschriften */
+        h1 {
+            color: #0F4391;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #0F4391;
+        }
+
+        /* Antwortblöcke */
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Button-Navigation */
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #0F4391;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #09306b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Optionales Logo -->
+    <div class="logo-container">
+        <img src="Bombillo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Block F – Algorithmen und Sortiermethoden (Fragen 36–45)</h1>
+
+    <h2>36. Wie wird die lineare Suche und die Suche nach Maximum/Minimum durch sortierte Felder beschleunigt?</h2>
+    <pre>
+Minimum: erstes Element, Maximum: letztes Element.
+Lineare Suche kann vorzeitig abbrechen, wenn aktuelles Element größer als gesuchtes ist.
+📘 Lektion: 14 – Algorithmen und Effizienz | 📄 Seite: 131–133
+    </pre>
+
+    <h2>37. Welche Rolle spielt die Variable 'minimum' beim Algorithmus zur Minimumsuche?</h2>
+    <pre>
+Speichert das kleinste bisher gefundene Element.
+Wird bei jedem Vergleich ggf. aktualisiert.
+📘 Lektion: 14.1 – Suchen und Vergleichen | 📄 Seite: 132
+    </pre>
+
+    <h2>38. Wie funktioniert Bubblesort?</h2>
+    <pre>
+1. Durchlauf von links nach rechts.
+2. Vergleich benachbarter Elemente.
+3. Tausch bei Bedarf.
+4. Wiederholen bis keine Vertauschung mehr erfolgt.
+📘 Lektion: 14.2 – Sortieralgorithmen | 📄 Seite: 134–136
+    </pre>
+
+    <h2>39. Wie entwickelt sich der Kontrollfluss in einem rekursiven Algorithmus?</h2>
+    <pre>
+- Aktive Phase: Zerlegung in Teilprobleme
+- Basisfall: direkte Lösung möglich
+- Passive Phase: Teilergebnisse werden kombiniert
+📘 Lektion: 28.1 – Rekursion | 📄 Seite: 326–328
+    </pre>
+
+    <h2>40. Welche Vor- und Nachteile bieten rekursive Algorithmen?</h2>
+    <pre>
+Vorteile:
++ verständlich für baumartige Probleme
++ gut beweisbar
+
+Nachteile:
+- höherer Speicherverbrauch
+- langsamer bei tiefer Rekursion
+📘 Lektion: 28.2 – Rekursive Verfahren | 📄 Seite: 330–331
+    </pre>
+
+    <h2>41. Wie funktionieren rekursive Such- und Sortieralgorithmen?</h2>
+    <pre>
+- Binäre Suche: wiederholte Halbierung
+- Quicksort: Feld teilen und rekursiv sortieren
+- Mergesort: Felder teilen, sortieren und zusammenfügen
+📘 Lektion: 28.3 – Rekursive Sortieralgorithmen | 📄 Seite: 333–335
+    </pre>
+
+    <h2>42. Was sind die vier Schritte zur Entwicklung eines Algorithmus mit dynamischer Programmierung?</h2>
+    <pre>
+1. Struktur optimaler Lösungen erkennen
+2. Rekursive Definition
+3. Bottom-up oder Memoisation verwenden
+4. Lösung aus Zwischenergebnissen konstruieren
+📘 Lektion: 29.1 – Dynamische Programmierung | 📄 Seite: 341–344
+    </pre>
+
+    <h2>43. Welche Eigenschaften muss ein Problem für dynamische Programmierung erfüllen?</h2>
+    <pre>
+- Optimale Teilstruktur
+- Überlappende Teilprobleme
+📘 Lektion: 29.1 – Eigenschaften geeigneter Probleme | 📄 Seite: 342–343
+    </pre>
+
+    <h2>44. Wie funktioniert der Beweis durch Cut & Replace?</h2>
+    <pre>
+Ein Widerspruchsbeweis, bei dem eine vermeintliche Optimallösung durch Teilersetzung verbessert wird.
+📘 Lektion: 29.2 – Beweistechniken | 📄 Seite: 344–345
+    </pre>
+
+    <h2>45. Wie kann man Algorithmen effizient messen und vergleichen?</h2>
+    <pre>
+- Zeitkomplexität (Big O)
+- Speicherverbrauch
+- Verhältnis Operationen zur Eingabemenge
+📘 Lektion: 14.3 – Laufzeitkomplexität | 📄 Seite: 137–139
+    </pre>
+
+    <!-- Navigations-Buttons -->
+    <div class="button-container">
+        <a href="OOP_FragenAntwortenBlock_E.html" class="nav-button">🔙 Zurück zu Block E</a>
+	      <a href="index.html" class="nav-button">💡 Zurück zur Übersicht</a>
+        <a href="OOP_FragenAntwortenBlock_G.html" class="nav-button">Weiter zu Block F 🔜</a>
+    </div>
+
+</div>
+
+</body>
+</html>
