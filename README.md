@@ -16,13 +16,13 @@ Ziel ist es, zentrale OOP-Konzepte verständlich, strukturiert und praxisnah zu 
 
 ## Behandelte Konzepte
 
-✅ Klassen und Objekte
-✅ Konstruktoren (`__init__`)
-✅ Attribute und Methoden
-✅ Vererbung
-✅ Polymorphismus
-✅ Kapselung
-✅ Spezielle Methoden (`__str__`, `__repr__`, etc.)
+- ✅ Klassen und Objekte
+- ✅ Konstruktoren (`__init__`)
+- ✅ Attribute und Methoden
+- ✅ Vererbung
+- ✅ Polymorphismus
+- ✅ Kapselung
+- ✅ Spezielle Methoden (`__str__`, `__repr__`, etc.)
 
 ---
 
