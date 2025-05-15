@@ -1,4 +1,4 @@
-# Objektorientierte Programmierung mit Python – Lernseite
+# 🔶 Objektorientierte Programmierung mit Python – Lernseite 🔶
 
 Willkommen auf der **OOP-Lernseite**!  
 Dieses Repository bietet eine praktische Einführung in die **objektorientierte Programmierung (OOP)** mit **Python**.  
