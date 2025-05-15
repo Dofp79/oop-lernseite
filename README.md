@@ -1,4 +1,4 @@
-# 🧠 Objektorientierte Programmierung mit Python – Lernseite
+# Objektorientierte Programmierung mit Python – Lernseite
 
 Willkommen auf der **OOP-Lernseite**!  
 Dieses Repository bietet eine praktische Einführung in die **objektorientierte Programmierung (OOP)** mit **Python**.  
@@ -6,7 +6,7 @@ Ziel ist es, zentrale OOP-Konzepte verständlich, strukturiert und praxisnah zu 
 
 ---
 
-## 🎯 Ziel des Projekts
+## Ziel des Projekts
 
 - Verstehen und anwenden der Grundprinzipien von OOP
 - Lernen anhand realer und verständlicher Code-Beispiele
@@ -14,15 +14,15 @@ Ziel ist es, zentrale OOP-Konzepte verständlich, strukturiert und praxisnah zu 
 
 ---
 
-## 🧩 Behandelte Konzepte
+## Behandelte Konzepte
 
-- ✅ Klassen und Objekte
-- ✅ Konstruktoren (`__init__`)
-- ✅ Attribute und Methoden
-- ✅ Vererbung
-- ✅ Polymorphismus
-- ✅ Kapselung
-- ✅ Spezielle Methoden (`__str__`, `__repr__`, etc.)
+✅ Klassen und Objekte
+✅ Konstruktoren (`__init__`)
+✅ Attribute und Methoden
+✅ Vererbung
+✅ Polymorphismus
+✅ Kapselung
+✅ Spezielle Methoden (`__str__`, `__repr__`, etc.)
 
 ---
 
