@@ -35,14 +35,14 @@ oop-lernseite/
 ├── classes/            # Klassendefinitionen zu Tieren, Fahrzeugen, etc.
 ├── examples/           # Anwendungsbeispiele & Übungen zur OOP
 
-
+```
 ________________________________________
 ## 📫 Kontakt
 
 Fragen oder Feedback?  
 **Doniman F. Peña Parra**
 
-- 🌐 [GPT-Link zur Projektunterstützung](https://chatgpt.com/g/g-vlwmxompx-python-zauberer)
+- 🌐 [GPT-Link zur Projektunterstützung](https://chatgpt.com/g/g-67f9029e82fc819188dd714659be51ae-html-manager)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/doniman-francisco-pe%C3%B1a-parra-609263232/)
 - ✉️ E-Mail: [dofp79@hotmail.com](mailto:dofp79@hotmail.com)
 
